@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none; 
+}
+
+#title {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+
+#contain {
+  padding-left: 13px;
+  height: 280px;
+}
+
+.palette {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 3px;
+}
+
+.red { background: red; }
+.red1 { background: #F16161; }
+.red2 { background: #F69FA0; }
+.orange { background: orange; }
+.orange1 { background: #F99F62; }
+.orange2 { background: #FBB57B; }
+.blue { background: #09C2DB; }
+.blue1 { background: #8BD3DC; }
+.blue2 { background: #B9E3E8; }
+.indigo { background: #0E38AD; }
+.indigo1 { background: #546AB2; }
+.indigo2 { background: #9C96C9; }
+.green { background: green; }
+.green1 { background: #97CD7E; }
+.green2 { background: #C6E2BB; }
+.black { background: black; }
+.black1 { background: #545454; }
+.black2 { background: #B2B2B2; }
+.yellow { background: yellow; }
+.yellow1 { background: #F7F754; }
+.yellow2 { background: #F7F4B1; }
+.purple { background: #B9509E; }
+.purple1 { background: #D178B1; }
+.purple2 { background: #E3ABCE; }
+
+
+#colorpanel {
+  width: 130px;
+  height: 350px;
+  float: left;
+  margin-right: 18px;
+}
+
+#linepanel {
+  width: 130px;
+  height: 100px;
+  margin-left: 18px;
+  float: left;
+}
+
+#myRange {
+  margin-left: 5px;
+}
+
+#canvasarea {
+  width: 700px;
+  height: 500px;
+  float: left;
+  margin-top: -20px;  
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  outline: 0;
+  margin-top: 5px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+
+#space {
+  position: relative;
+  top: 520px;
+  right: 600px;
+}
+
+
+
+
+
+
+

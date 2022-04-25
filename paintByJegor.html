@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paint by Jegor</title>
+    <link rel="stylesheet" href="styles.css">
+	</head>
+  <body>
+    <!--Палитра цветов-->
+      <div id="colorpanel">
+      <center><p>ЦВЕТА</p></center>
+       <div id="contain">
+         <div class="palette red" id="red" onclick="changeColors(this)"></div>
+         <div class="palette red1" id="red1" onclick="changeColors(this)"></div>
+         <div class="palette red2" id="red2" onclick="changeColors(this)"></div>
+         <div class="palette orange" id="orange" onclick="changeColors(this)"></div>
+         <div class="palette orange1" id="orange1" onclick="changeColors(this)"></div>
+         <div class="palette orange2" id="orange2" onclick="changeColors(this)"></div>
+         <div class="palette yellow" id="yellow" onclick="changeColors(this)"></div>
+         <div class="palette yellow1" id="yellow1" onclick="changeColors(this)"></div>
+         <div class="palette yellow2" id="yellow2" onclick="changeColors(this)"></div>
+         <div class="palette green" id="green" onclick="changeColors(this)"></div>
+         <div class="palette green1" id="green1" onclick="changeColors(this)"></div>
+         <div class="palette green2" id="green2" onclick="changeColors(this)"></div>
+         <div class="palette blue" id="blue" onclick="changeColors(this)"></div>
+         <div class="palette blue1" id="blue1" onclick="changeColors(this)"></div>
+         <div class="palette blue2" id="blue2" onclick="changeColors(this)"></div>
+         <div class="palette indigo" id="indigo" onclick="changeColors(this)"></div>
+         <div class="palette indigo1" id="indigo1" onclick="changeColors(this)"></div>
+         <div class="palette indigo2" id="indigo2" onclick="changeColors(this)"></div>
+         <div class="palette purple" id="purple" onclick="changeColors(this)"></div>
+         <div class="palette purple1" id="purple1" onclick="changeColors(this)"></div>
+         <div class="palette purple2" id="purple2" onclick="changeColors(this)"></div>
+         <div class="palette black" id="black" onclick="changeColors(this)"></div>
+         <div class="palette black1" id="black1" onclick="changeColors(this)"></div>
+         <div class="palette black2" id="black2" onclick="changeColors(this)"></div>
+       </div>
+       </div>
+
+<!--Область для рисования-->
+      <div id="canvasarea"><br>
+       <canvas id="myCanvas" width="700" height="500" style="border:1.5px solid #000000;"></canvas>
+      </div>
+
+<!--Меню для изменения толщины кисти-->
+      <div id="linepanel">
+       <center><p>ТОЛЩИНА КИСТИ</p></center>
+        <form>
+          <input type="range" id="myRange" name="amountRange" value="1" min="1" max="25" oninput="this.form.amountInput.value=this.value" onclick="lineWidthRange()">
+        </form>
+        <br/>
+      </center>
+      </div> 
+      
+      <!--Кнопки мгновенной очистики и сохранение (сохранение не обяхательно тк canvas уже позволяет сохранять изображения)-->     
+      <div id="space">
+         <button class="button" onclick="erase()">Очистить поле</button>
+         <button class="button"><a href="#" id="dwnld" download="ваше_название_картинки.png">Сохранить</a></button>
+      <!--Также по-умолчанию CANVAS дает возможность сохранить рисунок наведя на область рисования (правой кнопкой и Сохранить как...)-->
+        </div>
+    </div>
+    <script type="text/javascript" src="drawing.js"></script>
+  </body>
+</html>
+
